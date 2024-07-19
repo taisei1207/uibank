@@ -96,6 +96,7 @@
 			h3 {
 				font-size: 24px;
 				margin-top: 5px;
+				color: #14205B;
 			}
 			p {
 				font-size: 14px;
@@ -103,6 +104,131 @@
 				width: 209px;
 				margin: 0 auto;
 			}
+		}
+	}
+
+	.feature {
+		padding: 70px calc(50% - 340px) 90px;
+		&-list {
+			margin-top: 70px;
+		}
+		&-item {
+			&:not(&:last-of-type) {
+				margin-bottom: 100px;
+			}
+		}
+		&-head {
+			display: flex;
+			width: 620px;
+			margin: 0 auto;
+		}
+		&-point {
+			width: 84px;
+		}
+		&-content {
+			margin-left: 60px;
+			width: calc(100% - 163px);
+			h3 {
+				line-height: 1.8;
+				font-weight: 600;
+				font-size: 32px;
+				color: #141E50;
+				margin-bottom: 15px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		&-txt {
+			display: flex;
+			align-items: center;
+			margin-top: 80px;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, -50px);
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-right: 47px solid transparent;
+				border-left: 47px solid transparent;
+				border-top: 38px solid #99b0d9;
+				border-bottom: 0;
+			}
+			img {
+				width: 141px;
+			}
+			p {
+				margin-left: 15px;
+				color: #141E50;
+				font-size: 20px;
+				font-weight: 600;
+			}
+		}
+		&-img {
+			margin-top: 15px;
+		}
+		&-bottom {
+			display: flex;
+			margin: 35px -20px 0;
+			li {
+				margin-bottom: 35px;
+				h3 {
+					font-size: 24px;
+					color: #222222;
+					font-weight: 600;
+					border-bottom: solid 3px #162EA3;
+					padding: 0 0 15px 75px;
+					position: relative;
+					margin-bottom: 20px;
+					&::before {
+						display: block;
+						color: #162EA3;
+						font-family: "din-2014", sans-serif;
+						font-weight: 700;
+						font-size: 81px;
+						text-align: center;
+						font-style: normal;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+				&:nth-of-type(1) {
+					h3 {
+						&::before {
+							content: "1";
+						}
+					}
+				}
+				&:nth-of-type(2) {
+					h3 {
+						&::before {
+							content: "2";
+						}
+					}
+				}
+				&:nth-of-type(3) {
+					h3 {
+						&::before {
+							content: "3";
+						}
+					}
+				}
+			}
+			p {
+				font-size: 18px;
+			}
+			img {
+				width: 400px;
+			}
+		}
+		&-item  {
+			margin-bottom: 40px;
 		}
 	}
 }
