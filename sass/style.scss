@@ -428,4 +428,47 @@
 			}
 		}
 	}
+
+	.question {
+		padding: 80px calc(50% - 500px) 115px;
+		&-list {
+			margin-top: 60px;
+			display: flex;
+			flex-direction: column;
+			li {
+				box-shadow: 0px 15px 25px 0px rgba(16, 47, 139, 0.1);
+				background: #fff;
+				width: 100%;
+				margin-bottom: 20px;
+				padding: 50px 120px 50px 130px;
+				position: relative;
+				&::before {
+					content: "Q";
+					left: 35px;
+					top: 25px;
+					position: absolute;
+					width: 65px;
+					height: 65px;
+					display: block;
+					color: #fff;
+					font-family: "din-2014", sans-serif;
+					font-weight: 700;
+					text-align: center;
+					font-style: normal;
+					font-size: 41px;
+					background: #B49664;
+					border-radius: 50%;
+				}
+				h3 {
+					color: #141E50;
+					font-size: 24px;
+					margin-bottom: 10px;
+				}
+				p {
+					color: #141E50;
+					font-size: 19px;
+				}
+			}
+		}
+	}
 }
