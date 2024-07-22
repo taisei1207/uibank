@@ -8,13 +8,20 @@
 		justify-content: space-between;
 		padding: 40px calc(50% - 540px) 20px;
 		background: url("/images/bg_mv_pc.jpg") 0 0 / 100%;
+		@media only screen and (max-width: 767px) {
+			background: url("/images/bg_mv_sp.jpg") 0 0 / 100%;
+			padding: 40px 20px;
+		}
 		&-content {
-			width: 470px;
+			max-width: 470px;
 		}
 		&-head {
 			font-size: 26px;
 			color: #141E50;
 			font-weight: bold;
+			@media only screen and (max-width: 767px) {
+				font-size: 18px;
+			}
 		}
 		&-logo {
 			margin: 30px 0;
@@ -24,6 +31,9 @@
 			color: #141E50;
 			margin-bottom: 30px;
 			width: 95%;
+			@media only screen and (max-width: 767px) {
+				font-size: 16px;
+			}
 		}
 		&-list {
 			display: flex;
