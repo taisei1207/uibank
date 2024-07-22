@@ -3,6 +3,49 @@
 @import "layout/**";
 
 .uibank {
+	.mv {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px calc(50% - 540px) 20px;
+		background: url("/images/bg_mv_pc.jpg") 0 0 / 100%;
+		&-content {
+			width: 470px;
+		}
+		&-head {
+			font-size: 26px;
+			color: #141E50;
+			font-weight: bold;
+		}
+		&-logo {
+			margin: 30px 0;
+		}
+		&-txt {
+			font-size: 18px;
+			color: #141E50;
+			margin-bottom: 30px;
+			width: 95%;
+		}
+		&-list {
+			display: flex;
+			margin-bottom: 30px;
+			li {
+				width: 140px;
+				margin-right: 20px;
+			}
+		}
+		&-btn-list {
+			display: flex;
+			justify-content: space-between;
+			li {
+				width: calc((100% - 20px) / 2);
+			}
+
+		}
+		&-img {
+			width: calc(100% - 510px);
+		}
+	}
+
 	.about {
 		padding: 70px calc(50% - 540px) 90px;
 		background: #F8F9FC;
