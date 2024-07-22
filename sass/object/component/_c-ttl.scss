@@ -5,5 +5,8 @@
     font-weight: 600;
     margin-top: 10px;
     color: #141E50;
+    @media only screen and (max-width: 767px) {
+      font-size: 22px;
+    }
   }
 }
