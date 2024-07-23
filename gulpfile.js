@@ -50,7 +50,7 @@ gulp.task('sass', function() {
     cascade: false
     })]))
 		.pipe(sourcemaps.write())
-    .pipe(gulp.dest('./pages/'));
+    .pipe(gulp.dest('./pulic/'));
 });
 
 var pug = require('gulp-pug');
@@ -61,15 +61,15 @@ gulp.task('pug', () => {
 	.pipe(pug({
 		pretty: true
 	}))
-	.pipe(gulp.dest('./pages'));
+	.pipe(gulp.dest('./public'));
 });
 
 //Browser Syncin
 gulp.task( 'browser-sync', done => {
 	browserSync.init({
 		server: {
-			baseDir: './',
-			index: '/pages/index.html'
+			baseDir: './public/',
+			index: '/index.html'
 		}
 	})
 	done()
@@ -97,7 +97,7 @@ gulp.task("imagemin", function() {
 		return gulp
 		.src("./base/*.{png,jpg,gif,svg}")
 		.pipe(imagemin(imageminOption))
-		.pipe(gulp.dest("./images/"));
+		.pipe(gulp.dest("./public/images/"));
 });
 
 gulp.task('file-watch', function() {
