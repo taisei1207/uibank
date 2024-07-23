@@ -50,7 +50,7 @@ gulp.task('sass', function() {
     cascade: false
     })]))
 		.pipe(sourcemaps.write())
-    .pipe(gulp.dest('./pulic/'));
+    .pipe(gulp.dest('./public/'));
 });
 
 var pug = require('gulp-pug');
