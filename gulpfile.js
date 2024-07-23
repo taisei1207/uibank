@@ -108,6 +108,4 @@ gulp.task('file-watch', function() {
 
 // タスク"task-watch"がgulpと入力しただけでdefaultで実行されるようになる
 gulp.task('default', gulp.series(gulp.parallel('browser-sync','file-watch','sass:watch', 'pug:watch')));
-
-
-
+gulp.task('build', gulp.series(gulp.parallel('pug','sass')));
