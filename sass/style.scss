@@ -185,6 +185,7 @@ body {
 				margin-top: 5px;
 				min-width: 209px;
 				margin: 0 auto;
+				color: #666666
 			}
 		}
 	}
@@ -237,6 +238,7 @@ body {
 			}
 			p {
 				font-size: 16px;
+				font-family: 'Noto Sans JP', '游ゴシック', 'YuGothic', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 				@media only screen and (max-width: 767px) {
 					font-size: 14px;
 				}
@@ -506,6 +508,7 @@ body {
 				font-size: 24px;
 				font-weight: bold;
 				color: #141E50;
+				font-family: 'Noto Sans JP', '游ゴシック', 'YuGothic', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 			}
 		}
 	}
@@ -629,6 +632,7 @@ body {
 			}
 			p {
 				font-size: 16px;
+				margin-top: 5px;
 			}
 			small {
 				margin-top: 30px;
@@ -734,6 +738,7 @@ body {
 	.step {
 		background: #F8F9FC;
 		padding: 90px calc(50% - 500px);
+		font-family: 'Noto Sans JP', '游ゴシック', 'YuGothic', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
 		}
@@ -780,6 +785,7 @@ body {
 				font-size: 24px;
 				font-weight: bold;
 				margin-left: 10px;
+				color: #141E50;
 				@media only screen and (max-width: 767px) {
 					width: calc(100% - 80px);
 				}
