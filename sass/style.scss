@@ -7,24 +7,31 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 40px calc(50% - 540px) 20px;
-		background: url("/images/bg_mv_pc.jpg") 0 0 / 100%;
+		background: url("/images/bg_mv_pc.jpg") 0 0 / 100% no-repeat;
 		@media only screen and (max-width: 767px) {
-			background: url("/images/bg_mv_sp.jpg") 0 0 / 100%;
+			background: url("/images/bg_mv_sp.jpg") left 0 bottom 0 / 100% no-repeat;
 			padding: 40px 25px;
 		}
 		&-content {
 			max-width: 470px;
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+			}
 		}
 		&-head {
 			font-size: 26px;
 			color: #141E50;
 			font-weight: bold;
 			@media only screen and (max-width: 767px) {
-				font-size: 18px;
+				font-size: 4.7vw;
+				text-align: center;
 			}
 		}
 		&-logo {
 			margin: 30px 0;
+			@media only screen and (max-width: 767px) {
+				margin: 20px 0;
+			}
 		}
 		&-txt {
 			font-size: 18px;
@@ -33,6 +40,8 @@
 			width: 95%;
 			@media only screen and (max-width: 767px) {
 				font-size: 16px;
+				margin-bottom: 10px;
+				width: 100%;
 			}
 		}
 		&-list {
@@ -53,6 +62,10 @@
 		}
 		&-img {
 			width: calc(100% - 510px);
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+				margin-bottom: 15px;
+			}
 		}
 	}
 
@@ -215,6 +228,7 @@
 				@media only screen and (max-width: 767px) {
 					font-size: 20px;
 					margin-bottom: 5px;
+					letter-spacing: -0.01em;
 				}
 			}
 			p {
@@ -245,12 +259,19 @@
 			}
 			img {
 				width: 141px;
+				@media only screen and (max-width: 767px) {
+					width: 90px;
+					margin-top: 0;
+				}
 			}
 			p {
 				margin-left: 15px;
 				color: #141E50;
 				font-size: 20px;
 				font-weight: 600;
+				@media only screen and (max-width: 767px) {
+					font-size: 16px;
+				}
 			}
 		}
 		&-img {
@@ -360,7 +381,8 @@
 			justify-content: space-between;
 			margin-top: 30px;
 			@media only screen and (max-width: 767px) {
-				flex-direction: column;
+				margin-top: 0;
+				flex-direction: column-reverse;
 			}
 			p {
 				font-size: 16px;
@@ -368,6 +390,7 @@
 				width: calc(100% - 210px);
 				@media only screen and (max-width: 767px) {
 					width: 100%;
+					margin-top: 5px;
 				}
 			}
 			&-img {
@@ -380,8 +403,29 @@
 		}
 		&-content {
 			text-align: center;
+			position: relative;
+			&::before {
+				position: absolute;
+				top: -30px;
+				left: 50%;
+				width: 0;
+				height: 0;
+				transform: translate(-50%, -50px);
+				border-top: 38px solid #141E50;
+				border-right: 47px solid transparent;
+				border-bottom: 0;
+				border-left: 47px solid transparent;
+				border-style: solid;
+				content: "";
+				@media only screen and (max-width: 767px) {
+					top: -20px;
+				}
+			}
 			h3 {
 				font-size: 26px;
+				@media only screen and (max-width: 767px) {
+					font-size: 20px;
+				}
 				span {
 					font-weight: 600;
 				}
@@ -389,10 +433,13 @@
 		}
 		&-box {
 			border: solid 2px #141E50;
-			padding: 37px 0 22px;
+			padding: 37px 20px 22px;
 			background: #fff;
 			position: relative;
 			margin-top: 55px;
+			@media only screen and (max-width: 767px) {
+				margin-top: 90px;
+			}
 			p {
 				font-size: 20px;
 				font-weight: bold;
@@ -405,6 +452,9 @@
 				top: 0;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				@media only screen and (max-width: 767px) {
+					width: 170px;
+				}
 			}
 		}
 		&-list {
@@ -444,6 +494,9 @@
 			}
 			figure {
 				padding: 0 40px;
+				@media only screen and (max-width: 767px) {
+					padding: 0;
+				}
 			}
 			figcaption {
 				font-size: 24px;
@@ -723,6 +776,9 @@
 				font-size: 24px;
 				font-weight: bold;
 				margin-left: 10px;
+				@media only screen and (max-width: 767px) {
+					width: calc(100% - 80px);
+				}
 			}
 			span {
 				font-size: 12px;
