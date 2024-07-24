@@ -62,10 +62,14 @@ body {
 		&-btn-list {
 			display: flex;
 			justify-content: space-between;
+			a {
+				&:hover {
+					opacity: 0.8;
+				}
+			}
 			li {
 				width: calc((100% - 20px) / 2);
 			}
-
 		}
 		&-img {
 			width: calc(100% - 510px);
