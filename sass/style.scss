@@ -2,6 +2,10 @@
 @import "object/**";
 @import "layout/**";
 
+body {
+	min-width: 1240px;
+}
+
 .uibank {
 	.mv {
 		display: flex;
