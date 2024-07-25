@@ -54,9 +54,17 @@ body {
 		&-list {
 			display: flex;
 			margin-bottom: 30px;
+			@media only screen and (max-width: 767px) {
+				justify-content: center;
+			}
 			li {
 				width: 140px;
 				margin-right: 20px;
+				@media only screen and (max-width: 767px) {
+					&:last-of-type {
+						margin: 0;
+					}
+				}
 			}
 		}
 		&-btn-list {
@@ -115,6 +123,7 @@ body {
 				bottom: 0;
 				left: 50%;
 				transform: translate(-50%);
+				color: #14205B;
 				&::after {
 					position: absolute;
 					top: 0;
@@ -209,8 +218,8 @@ body {
 			}
 		}
 		&-item {
-			&:not(&:last-of-type) {
-				margin-bottom: 100px;
+			&:not(:last-of-type) {
+				margin-bottom: 90px;
 			}
 		}
 		&-head {
@@ -351,12 +360,9 @@ body {
 				margin-left: 50px;
 				@media only screen and (max-width: 767px) {
 					width: 100%;
-					margin: 0;
+					margin: 0 auto;
 				}
 			}
-		}
-		&-item  {
-			margin-bottom: 40px;
 		}
 	}
 
@@ -409,8 +415,8 @@ body {
 			&-img {
 				width: 178px;
 				@media only screen and (max-width: 767px) {
-					width: 100%;
-					margin-top: 20px;
+					width: 60%;
+					margin: 20px auto 0;
 				}
 			}
 		}
@@ -542,6 +548,14 @@ body {
 					}
 				}
 			}
+			figure {
+				img {
+					@media only screen and (max-width: 767px) {
+						width: 60%;
+						margin: 0 auto;
+					}
+				}
+			}
 			figcaption {
 				font-size: 24px;
 				margin-top: 10px;
@@ -642,6 +656,7 @@ body {
 				margin-top: 5px;
 			}
 			small {
+				font-size: 14px;
 				margin-top: 30px;
 				display: block;
 			}
@@ -669,8 +684,10 @@ body {
 				margin-bottom: 20px;
 				padding: 50px 120px 50px 130px;
 				position: relative;
+				border-radius: 10px;
 				@media only screen and (max-width: 767px) {
 					padding: 20px;
+					border-radius: 4px;
 				}
 				&::before {
 					content: "Q";
