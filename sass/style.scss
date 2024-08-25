@@ -20,7 +20,10 @@ body {
 			padding: 40px 25px;
 		}
 		&-content {
-			max-width: 470px;
+			max-width: 490px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			@media only screen and (max-width: 767px) {
 				width: 100%;
 			}
@@ -192,6 +195,7 @@ body {
 				font-size: 24px;
 				margin-top: 5px;
 				color: #14205B;
+				font-weight: 600;
 				@media only screen and (max-width: 767px) {
 					font-size: 18px;
 				}
@@ -220,6 +224,12 @@ body {
 		&-item {
 			&:not(:last-of-type) {
 				margin-bottom: 90px;
+			}
+			&:nth-of-type(2) {
+				.feature-cap-list {
+					width: 530px;
+					margin: 0 auto;
+				}
 			}
 		}
 		&-head {
@@ -254,7 +264,6 @@ body {
 			}
 			p {
 				font-size: 16px;
-				font-family: 'Noto Sans JP', '游ゴシック', 'YuGothic', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 				@media only screen and (max-width: 767px) {
 					font-size: 14px;
 				}
@@ -263,6 +272,7 @@ body {
 		&-txt {
 			display: flex;
 			align-items: center;
+			justify-content: center;
 			margin-top: 80px;
 			position: relative;
 			&::before {
@@ -280,7 +290,8 @@ body {
 				border-bottom: 0;
 			}
 			img {
-				width: 141px;
+				width: 90px;
+				margin: 0;
 				@media only screen and (max-width: 767px) {
 					width: 90px;
 					margin-top: 0;
@@ -297,7 +308,31 @@ body {
 			}
 		}
 		&-img {
-			margin-top: 15px;
+			margin-top: 24px;
+		}
+		&-small {
+			font-size: 12px;
+			text-align: center;
+			display: block;
+		}
+		&-cap-list {
+			font-size: 12px;
+			margin-top: 10px;
+		}
+		&-row {
+			display: flex;
+			justify-content: space-between;
+			font-size: 31px;
+			color: #141E50;
+			width: 430px;
+			margin: 10px auto;
+			ul {
+				margin-top: 30px;
+			}
+			img {
+				width: 142px;
+				margin-top: 0;
+			}
 		}
 		&-bottom {
 			display: flex;
@@ -313,7 +348,7 @@ body {
 					color: #222222;
 					font-weight: 600;
 					border-bottom: solid 3px #162EA3;
-					padding: 0 0 15px 75px;
+					padding: 15px 0 25px 85px;
 					position: relative;
 					margin-bottom: 20px;
 					&::before {
@@ -335,12 +370,32 @@ body {
 						&::before {
 							content: "1";
 						}
+						&::after {
+							content: "";
+							position: absolute;
+							width: 74px;
+							height: 69px;
+							background: url("/images/img_money1.jpg") 0 0 /100%;
+							right: 50px;
+							top: 50%;
+							transform: translateY(-50%);
+						}
 					}
 				}
 				&:nth-of-type(2) {
 					h3 {
 						&::before {
 							content: "2";
+						}
+						&::after {
+							content: "";
+							position: absolute;
+							width: 61px;
+							height: 60px;
+							background: url("/images/img_money2.jpg") 0 0 /100%;
+							right: 30px;
+							top: 50%;
+							transform: translateY(-50%);
 						}
 					}
 				}
@@ -349,13 +404,23 @@ body {
 						&::before {
 							content: "3";
 						}
+						&::after {
+							content: "";
+							position: absolute;
+							width: 67px;
+							height: 60px;
+							background: url("/images/img_money3.jpg") 0 0 /100%;
+							right: 50px;
+							top: 50%;
+							transform: translateY(-50%);
+						}
 					}
 				}
 			}
 			p {
 				font-size: 18px;
 			}
-			img {
+			&-img {
 				max-width: 350px;
 				margin-left: 50px;
 				@media only screen and (max-width: 767px) {
@@ -423,23 +488,6 @@ body {
 		&-content {
 			text-align: center;
 			position: relative;
-			&::before {
-				position: absolute;
-				top: -30px;
-				left: 50%;
-				width: 0;
-				height: 0;
-				transform: translate(-50%, -50px);
-				border-top: 38px solid #141E50;
-				border-right: 47px solid transparent;
-				border-bottom: 0;
-				border-left: 47px solid transparent;
-				border-style: solid;
-				content: "";
-				@media only screen and (max-width: 767px) {
-					top: -20px;
-				}
-			}
 			h3 {
 				font-size: 26px;
 				@media only screen and (max-width: 767px) {
@@ -447,32 +495,6 @@ body {
 				}
 				span {
 					font-weight: 600;
-				}
-			}
-		}
-		&-box {
-			border: solid 2px #141E50;
-			padding: 37px 20px 22px;
-			background: #fff;
-			position: relative;
-			margin-top: 55px;
-			@media only screen and (max-width: 767px) {
-				margin-top: 90px;
-			}
-			p {
-				font-size: 20px;
-				font-weight: bold;
-				color: #fff;
-				background: #141E50;
-				display: inline-block;
-				padding: 5px 33px;
-				border-radius: 20px;
-				position: absolute;
-				top: 0;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				@media only screen and (max-width: 767px) {
-					width: 170px;
 				}
 			}
 		}
@@ -521,8 +543,14 @@ body {
 				font-size: 24px;
 				font-weight: bold;
 				color: #141E50;
-				font-family: 'Noto Sans JP', '游ゴシック', 'YuGothic', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 			}
+		}
+		&-bottom {
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 30px;
+			color: #141E50;
 		}
 	}
 
@@ -591,12 +619,56 @@ body {
 			background: #fff;
 			&:nth-of-type(1) {
 				margin-bottom: 20px;
+				.use-item-row {
+					&:nth-of-type(1) {
+						p {
+							border: solid 1px #CED0E5;
+							padding: 32px;
+							border-radius: 12px;
+						}
+						.use-item-row-img {
+							width: 196px;
+						}
+						.use-item-content {
+							width: calc(100% - 264px);
+						}
+					}
+					&:nth-of-type(2) {
+						img {
+							width: 200px;
+							object-fit: contain;
+						}
+					}
+				}
+			}
+			&:nth-of-type(2) {
+				.use-item-row {
+					&:nth-of-type(1) {
+						p {
+							border: solid 1px #CED0E5;
+							padding: 32px;
+							border-radius: 12px;
+						}
+						.use-item-row-img {
+							width: 158px;
+						}
+						.use-item-content {
+							width: calc(100% - 222px);
+						}
+					}
+					&:nth-of-type(2) {
+						img {
+							width: 246px;
+						}
+					}
+				}
 			}
 		}
 		&-item-row {
 			display: flex;
-			padding: 48px 67px;
+			padding: 70px 67px;
 			position: relative;
+			align-items: center;
 			@media only screen and (max-width: 767px) {
 				padding: 20px;
 				flex-direction: column;
@@ -604,37 +676,14 @@ body {
 			}
 			&:nth-of-type(1) {
 				&::before {
-					position: absolute;
-					top: 110%;
-					left: 50%;
-					width: 0;
-					height: 0;
-					-webkit-transform: translate(-50%, -50px);
-					transform: translate(-50%, -50px);
-					border-right: 35px solid transparent;
-					border-left: 35px solid transparent;
-					border-top: 29px solid #141E50;
-					border-bottom: 0;
-					border-style: solid;
 					content: "";
-				}
-				img {
-					width: 196px;
-				}
-			}
-			&:nth-of-type(2) {
-				img {
 					width: 200px;
-				}
-			}
-			&:nth-of-type(3) {
-				img {
-					width: 158px;
-				}
-			}
-			&:nth-of-type(4) {
-				&-img {
-					width: 246px;
+					height: 143px;
+					background: url("/images/img_change.jpg") 0 0 / 100% no-repeat;
+					left: 50%;
+					bottom: -60px;
+					position: absolute;
+					transform: translate(-50%, 0%);
 				}
 			}
 		}
@@ -642,6 +691,11 @@ body {
 			padding: 20px 34px;
 			@media only screen and (max-width: 767px) {
 				padding: 20px 0;
+			}
+			h4 {
+				color: #141E50;
+				font-size: 20px;
+				margin-bottom: 4px;
 			}
 			span {
 				font-weight: bold;
@@ -653,7 +707,7 @@ body {
 			}
 			p {
 				font-size: 16px;
-				margin-top: 5px;
+				margin-top: 15px;
 			}
 			small {
 				font-size: 14px;
@@ -665,7 +719,6 @@ body {
 
 	.question {
 		padding: 80px calc(50% - 500px) 115px;
-		font-family: 'Noto Sans JP', '游ゴシック', 'YuGothic', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
 		}
@@ -761,8 +814,7 @@ body {
 
 	.step {
 		background: #F8F9FC;
-		padding: 90px calc(50% - 500px);
-		font-family: 'Noto Sans JP', '游ゴシック', 'YuGothic', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+		padding: 90px calc(50% - 600px);
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
 		}
@@ -833,7 +885,7 @@ body {
 			}
 		}
 		&-img-content {
-			width: calc(100% - 605px);
+			width: calc(100% - 680px);
 			@media only screen and (max-width: 767px) {
 				width: 100%;
 				margin-top: 20px;

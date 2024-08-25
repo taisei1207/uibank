@@ -4,6 +4,9 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/style.css"/>
     <title> UI銀行</title>
   </head>
@@ -11,14 +14,10 @@
     <main class="uibank">
       <section class="mv">
         <div class="mv-content">
-          <p class="mv-head">東京きらぼしフィナンシャルグループ<br>が設立した『デジタルバンク』</p>
+          <p class="mv-head">東京きらぼしフィナンシャルグループが<br>設立した『デジタルバンク』</p>
           <h1><img class="mv-logo" src="/images/logo_uibank.png" alt=""/></h1>
           <p class="mv-txt">きらぼし銀行とUI銀行を併用して活用いただくとますます便利に。スマホひとつで完結できるから、毎日がよりシンプルになります。</p>
           <div class="mv-img u-hide-pc"><img src="/images/img_mv.png" alt=""/></div>
-          <ul class="mv-list"> 
-            <li><img src="/images/img_mv-item1.png" alt=""/></li>
-            <li><img src="/images/img_mv-item2.png" alt=""/></li>
-          </ul>
           <ul class="mv-btn-list">
             <li><a href=""> <img src="/images/img_btn1.png" alt=""/></a></li>
             <li><a href=""> <img src="/images/img_btn2.png" alt=""/></a></li>
@@ -31,7 +30,7 @@
         <div class="c-sec-ttl">デジタルバンク『UI銀行』ってどんな銀行？</div>
         <ul class="about-list"> 
           <li class="about-item"> 
-            <figure> <img src="/images/img_about1.png" alt=""/>
+            <figure> <img src="/images/img_about1.svg" alt=""/>
               <figcaption>特徴</figcaption>
             </figure>
             <h3>東京きらぼしフィナンシャルグループが運営</h3>
@@ -62,7 +61,7 @@
       </section>
       <section class="feature"> 
         <div class="c-sec-head">きらぼし銀行と併用がおすすめ</div>
-        <div class="c-sec-ttl">『UI銀行』の特徴は？</div>
+        <div class="c-sec-ttl">『UI銀行』のおすすめポイント</div>
         <ul class="feature-list"> 
           <li class="feature-item">
             <div class="feature-head">
@@ -71,10 +70,14 @@
                 <h3>業界最高水準の金利</h3>
                 <p>定期預金・普通預金共に業界高水準の金利だから、<br class="u-show-pc">「長期的に安定して預けたい方」､「預金で資産を増<br class="u-show-pc">やしたい方」には特におすすめです。</p>
               </div>
-            </div><img class="feature-img" src="/images/img_feature1.jpg" alt=""/>
+            </div><img class="feature-img" src="/images/img_feature1.jpg" alt=""/><img class="feature-img" src="/images/img_feature2.jpg" alt=""/><small class="feature-small">日本銀行時系列統計データ検索サイト(2024/5月時点)</small>
             <div class="feature-txt"><img class="feature-img" src="/images/img_pig.png" alt=""/>
-              <p>例えば、500万円を預金した場合...<br>なんと... 定期預金では10年間で約14万円の差が！</p>
-            </div><img class="feature-img" src="/images/img_feature2.jpg" alt=""/>
+              <p>例えば、500万円を預金した場合</p>
+            </div><img class="feature-img" src="/images/img_feature3.jpg" alt=""/>
+            <ul class="feature-cap-list"> 
+              <li>※本計算は税引き前の参考金額であり実際の計算とは異なる場合があります。</li>
+              <li>※金利は預ける期間・金額により変動する可能性があります。</li>
+            </ul>
           </li>
           <li class="feature-item">
             <div class="feature-head">
@@ -83,7 +86,17 @@
                 <h3>手数料が毎月最大20回無料</h3>
                 <p>UI銀行は手数料が最大20回/月無料！<br>お取引が多い方も便利に利用可能です。</p>
               </div>
-            </div><img class="feature-img" src="/images/img_feature3.jpg" alt=""/>
+            </div>
+            <div class="feature-row">
+              <ul> 
+                <li>ATM出金手数料</li>
+                <li>他行宛振込手数料</li>
+              </ul><img class="feature-img" src="/images/img_feature4.jpg" alt=""/>
+            </div>
+            <ul class="feature-cap-list"> 
+              <li>※ステージ適用条件により、手数料優遇サービスの内容が異なります。</li>
+              <li>※ATM出金手数料の優遇はセブン銀行ATMのみ適用です。きらぼし銀行ATMは対象外です。							</li>
+            </ul><img class="feature-img" src="/images/img_feature5.jpg" alt=""/>
           </li>
           <li class="feature-item">
             <div class="feature-head">
@@ -107,7 +120,8 @@
                   <h3>定期預金</h3>
                   <p>定期預金の商品選択や、お預入れができます。</p>
                 </li>
-              </ul><img class="feature-bottom-img" src="/images/img_feature4.jpg" alt=""/>
+              </ul>
+              <div class="feature-bottom-img"><img src="/images/img_feature6.jpg" alt=""/></div>
             </div>
           </li>
         </ul>
@@ -121,10 +135,6 @@
             <div class="merit-intro-img"><img src="/images/img_merit1.png" alt=""/></div>
           </div>
           <div class="merit-content"> 
-            <div class="merit-box">
-              <p>シミュレーション</p>
-              <h3>お近くのきらぼし銀行店舗にて<span>対面でサポートいたします</span></h3>
-            </div>
             <ul class="merit-list"> 
               <li>
                 <figure> <img src="/images/img_merit2.png" alt=""/>
@@ -142,6 +152,7 @@
                 </figure>
               </li>
             </ul>
+            <div class="merit-bottom">お近くのきらぼし銀行店舗にて対面サポートいたします</div>
           </div>
         </div>
       </section>
@@ -174,8 +185,10 @@
         <div class="c-sec-head">多くの方は普段使いの手軽な銀行や、預金口座として活用</div>
         <ul class="use-list"> 
           <li class="use-item">
-            <div class="use-item-row"><img src="/images/img_woman.jpg" alt=""/>
-              <div class="use-item-content"> <span>きらぼしハナコさん(43歳)の場合</span>
+            <div class="use-item-row">
+              <div class="use-item-row-img"><img src="/images/img_woman.jpg" alt=""/></div>
+              <div class="use-item-content"> 
+                <h4>銀行の手数料が気になる</h4><span>きらぼしハナコさん(43歳)の場合</span>
                 <p>日々コツコツ節約しているものの、今の銀行だと窓口での手数料が高くて貯蓄を頑張ってもあんまり意味がないのかも...<br>振込手数料の無料回数が多い『UI銀行』に切り替え。</p>
               </div>
             </div>
@@ -186,9 +199,11 @@
             </div>
           </li>
           <li class="use-item">
-            <div class="use-item-row"><img src="/images/img_man.jpg" alt=""/>
-              <div class="use-item-content"> <span>きらぼしタロウさん(39歳)の場合</span>
-                <p>収入の大部分を生活費に充て、残りを老後に備え貯蓄に回しているつもりが、ついつい使ってしまう...<br>貯蓄がしっかりできるように『UI銀行』で貯蓄用の口座を開設。</p>
+            <div class="use-item-row">
+              <div class="use-item-row-img"><img src="/images/img_man.jpg" alt=""/></div>
+              <div class="use-item-content"> 
+                <h4>貯蓄を頑張りたいけどついつい使ってしまう</h4><span>きらぼしタロウさん(39歳)の場合</span>
+                <p>収入の大部分を生活費に充て、残りを老後に備え貯蓄に回しているつもりが、ついつい使ってしまう...<br class="u-hide-pc">貯蓄がしっかりできるように『UI銀行』で貯蓄用の口座を開設。</p>
               </div>
             </div>
             <div class="use-item-row">

@@ -4,21 +4,21 @@ html(lang="ja")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet")
 		link(rel="stylesheet", href="/style.css")
 		title  UI銀行
 	body
 		main.uibank
 			section.mv
 				.mv-content
-					p.mv-head 東京きらぼしフィナンシャルグループ<br>が設立した『デジタルバンク』
+					p.mv-head 東京きらぼしフィナンシャルグループが<br>設立した『デジタルバンク』
 					h1
 						img.mv-logo(src="/images/logo_uibank.png", alt="")
 					p.mv-txt きらぼし銀行とUI銀行を併用して活用いただくとますます便利に。スマホひとつで完結できるから、毎日がよりシンプルになります。
 					.mv-img.u-hide-pc
 						img(src="/images/img_mv.png", alt="")
-					ul.mv-list 
-						li: img(src="/images/img_mv-item1.png", alt="")
-						li: img(src="/images/img_mv-item2.png", alt="")
 					ul.mv-btn-list
 						li
 							a(href="") 
@@ -35,7 +35,7 @@ html(lang="ja")
 				ul.about-list 
 					li.about-item 
 						figure 
-							img(src="/images/img_about1.png", alt="")
+							img(src="/images/img_about1.svg", alt="")
 							figcaption 特徴
 						h3 東京きらぼしフィナンシャルグループが運営
 						p UI銀行は、東京きらぼしフィ<br class="u-show-pc">ナンシャルグループが設立した<br class="u-show-pc">デジタルバンクです。
@@ -60,7 +60,7 @@ html(lang="ja")
 
 			section.feature 
 				.c-sec-head きらぼし銀行と併用がおすすめ
-				.c-sec-ttl 『UI銀行』の特徴は？
+				.c-sec-ttl 『UI銀行』のおすすめポイント
 				ul.feature-list 
 					li.feature-item
 						.feature-head
@@ -70,11 +70,16 @@ html(lang="ja")
 								h3 業界最高水準の金利
 								p 定期預金・普通預金共に業界高水準の金利だから、<br class="u-show-pc">「長期的に安定して預けたい方」､「預金で資産を増<br class="u-show-pc">やしたい方」には特におすすめです。
 						img.feature-img(src="/images/img_feature1.jpg", alt="")
+						img.feature-img(src="/images/img_feature2.jpg", alt="")
+						small.feature-small 日本銀行時系列統計データ検索サイト(2024/5月時点)
 
 						.feature-txt
 							img.feature-img(src="/images/img_pig.png", alt="")
-							p 例えば、500万円を預金した場合...<br>なんと... 定期預金では10年間で約14万円の差が！
-						img.feature-img(src="/images/img_feature2.jpg", alt="")
+							p 例えば、500万円を預金した場合
+						img.feature-img(src="/images/img_feature3.jpg", alt="")
+						ul.feature-cap-list 
+							li ※本計算は税引き前の参考金額であり実際の計算とは異なる場合があります。
+							li ※金利は預ける期間・金額により変動する可能性があります。
 
 					li.feature-item
 						.feature-head
@@ -83,7 +88,15 @@ html(lang="ja")
 							.feature-content
 								h3 手数料が毎月最大20回無料
 								p UI銀行は手数料が最大20回/月無料！<br>お取引が多い方も便利に利用可能です。
-						img.feature-img(src="/images/img_feature3.jpg", alt="")
+						.feature-row
+							ul 
+								li ATM出金手数料
+								li 他行宛振込手数料
+							img.feature-img(src="/images/img_feature4.jpg", alt="")
+						ul.feature-cap-list 
+							li ※ステージ適用条件により、手数料優遇サービスの内容が異なります。
+							li ※ATM出金手数料の優遇はセブン銀行ATMのみ適用です。きらぼし銀行ATMは対象外です。							
+						img.feature-img(src="/images/img_feature5.jpg", alt="")
 
 					li.feature-item
 						.feature-head
@@ -103,7 +116,8 @@ html(lang="ja")
 								li
 									h3 定期預金
 									p 定期預金の商品選択や、お預入れができます。
-							img.feature-bottom-img(src="/images/img_feature4.jpg", alt="")
+							.feature-bottom-img
+								img(src="/images/img_feature6.jpg", alt="")
 			
 			section.merit 
 				.merit-card
@@ -114,10 +128,6 @@ html(lang="ja")
 						.merit-intro-img
 							img(src="/images/img_merit1.png", alt="")
 					.merit-content 
-						.merit-box
-							p シミュレーション
-							h3 お近くのきらぼし銀行店舗にて
-								span 対面でサポートいたします
 						ul.merit-list 
 							li
 								figure 
@@ -131,6 +141,8 @@ html(lang="ja")
 								figure 
 									img(src="/images/img_merit4.png", alt="")
 									figcaption 各種イベント<br class="u-show-pc">セミナー
+
+						.merit-bottom お近くのきらぼし銀行店舗にて対面サポートいたします
 
 			section.manage 
 				.c-sec-head 大切なお金の管理、ネット銀行で大丈夫？
@@ -158,8 +170,10 @@ html(lang="ja")
 				ul.use-list 
 					li.use-item
 						.use-item-row
-							img(src="/images/img_woman.jpg", alt="")
+							.use-item-row-img
+								img(src="/images/img_woman.jpg", alt="")
 							.use-item-content 
+								h4 銀行の手数料が気になる
 								span きらぼしハナコさん(43歳)の場合
 								p 日々コツコツ節約しているものの、今の銀行だと窓口での手数料が高くて貯蓄を頑張ってもあんまり意味がないのかも...<br>振込手数料の無料回数が多い『UI銀行』に切り替え。
 						.use-item-row
@@ -170,10 +184,12 @@ html(lang="ja")
 							img(src="/images/img_free.jpg", alt="")
 					li.use-item
 						.use-item-row
-							img(src="/images/img_man.jpg", alt="")
+							.use-item-row-img
+								img(src="/images/img_man.jpg", alt="")
 							.use-item-content 
+								h4 貯蓄を頑張りたいけどついつい使ってしまう
 								span きらぼしタロウさん(39歳)の場合
-								p 収入の大部分を生活費に充て、残りを老後に備え貯蓄に回しているつもりが、ついつい使ってしまう...<br>貯蓄がしっかりできるように『UI銀行』で貯蓄用の口座を開設。
+								p 収入の大部分を生活費に充て、残りを老後に備え貯蓄に回しているつもりが、ついつい使ってしまう...<br class="u-hide-pc">貯蓄がしっかりできるように『UI銀行』で貯蓄用の口座を開設。
 						.use-item-row
 							.use-item-content 
 								span 1年で10,000円も利子がついた！
