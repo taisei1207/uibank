@@ -8,6 +8,8 @@ html(lang="ja")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
 		link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet")
 		link(rel="stylesheet", href="/style.css")
+		link(rel="stylesheet", href="/common/css/common.css")
+		link(rel="stylesheet", href="/common/css/component.css")
 		title  UI銀行
 	body
 		main.uibank
@@ -284,5 +286,12 @@ html(lang="ja")
 					.step-img-content 
 						img(src="/images/img_step_4.jpg", alt="")
 
+			.fixedNavi.js-fixedNavi
+				.fixedNavi_item
+					a(href="" target="_blank" class="fixedNavi_btn")
+						img(src="/images/img_btn1.png", alt="")
+				.fixedNavi_item
+					a(href="" target="_blank" class="fixedNavi_btn")
+						img(src="/images/img_btn2.png", alt="")
 		script(src="/common/js/jquery-3.6.0.min.js")
 		script(src="/main.js") 

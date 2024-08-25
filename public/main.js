@@ -15,4 +15,17 @@ $(function(){
     $(this).prev().toggleClass("active");
     $(this).parent().next().slideToggle(400);
   });
+
+  // fixedArrow
+$(function(){
+  var $fnavi = $(".js-fixedNavi");
+  $(window).scroll(function(){
+    var currentPos = $(this).scrollTop();
+    if (currentPos > 200){
+      $fnavi.addClass("active");
+    }else{
+      $fnavi.removeClass("active");
+    }
+  });
+});
 });
