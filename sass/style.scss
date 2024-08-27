@@ -815,10 +815,13 @@ body {
 	}
 
 	.step {
-		background: #F8F9FC;
-		padding: 90px calc(50% - 542px);
+		padding: 90px 0;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
+		}
+		.c-sec-ttl {
+			background: #F8F9FC;
+			padding: 30px;
 		}
 		&-pre {
 			width: 100%;
@@ -893,6 +896,8 @@ body {
 		&-list {
 			display: flex;
 			justify-content: space-between;
+			max-width: 1084px;
+			margin: 0 auto;
 			li {
 				width: 250px;
 				padding-top: 50px;
@@ -906,52 +911,20 @@ body {
 			}
 		}
 		&-option {
-			padding-right: 152px;
-			border-top: solid 1px #CED0E5;
-			border-bottom: solid 1px #CED0E5;
+			box-sizing: border-box;
+			max-width: 840px;
+			margin: 70px auto;
+			background: #F8F9FC;
 			display: flex;
 			justify-content: space-between;
-			margin-top: 90px;
-			padding-top: 40px;
-			padding-bottom: 40px;
+			padding: 30px;
 			position: relative;
 			@media only screen and (max-width: 767px) {
 				padding: 20px 0;
 				margin: 0;
 			}
-			&::before {
-				content: "";
-				border-top: 22px solid #ced0e5;
-				border-right: 21px solid transparent;
-				border-left: 21px solid transparent;
-				width: 42px;
-				height: 22px;
-				position: absolute;
-				right: 380px;
-				top: 0;
-				box-sizing: border-box;
-				@media only screen and (max-width: 767px) {
-					left: 0;
-					right: 0;
-					margin: 0 auto;
-				}
-			}
-			&::after {
-				content: "";
-				border-top: 22px solid #f8f9fc;
-				border-right: 21px solid transparent;
-				border-left: 21px solid transparent;
-				width: 42px;
-				height: 22px;
-				position: absolute;
-				right: 380px;
-				top: -1px;
-				box-sizing: border-box;
-				@media only screen and (max-width: 767px) {
-					left: 0;
-					right: 0;
-					margin: 0 auto;
-				}
+			.step-content {
+				width: 484px;
 			}
 			.step-head {
 				h3 {
@@ -964,7 +937,8 @@ body {
 				font-size: 12px;
 			}
 			.step-img-content {
-				width: calc(100% - 605px);
+				margin: 0;
+				width: calc(100% - 516px);
 			}
 		}
 	}
