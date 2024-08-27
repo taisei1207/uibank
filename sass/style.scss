@@ -108,6 +108,9 @@ body {
 			width: calc((100% - 80px) / 4);
 			@media only screen and (max-width: 767px) {
 				width: 100%;
+				&:not(:last-of-type) {
+					margin-bottom: 20px;
+				}
 			}
 			figure {
 				align-items: center;
@@ -223,10 +226,13 @@ body {
 		&-item {
 			&:not(:last-of-type) {
 				margin-bottom: 90px;
+				@media only screen and (max-width: 767px) {
+					margin-bottom: 70px;
+				}
 			}
 			&:nth-of-type(2) {
 				.feature-cap-list {
-					width: 530px;
+					max-width: 530px;
 					margin: 0 auto;
 				}
 			}
@@ -325,12 +331,24 @@ body {
 			color: #141E50;
 			width: 430px;
 			margin: 10px auto;
+			@media only screen and (max-width: 767px) {
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+			}
 			ul {
 				margin-top: 30px;
+				@media only screen and (max-width: 767px) {
+					margin: 0;
+					text-align: center;
+				}
 			}
 			img {
 				width: 142px;
 				margin-top: 0;
+				@media only screen and (max-width: 767px) {
+					margin: 10px 0;
+				}
 			}
 		}
 		&-bottom {
@@ -343,6 +361,9 @@ body {
 			}
 			ul {
 				width: calc(100% - 390px);
+				@media only screen and (max-width: 767px) {
+					width: 100%;
+				}
 			}
 			li {
 				margin-bottom: 35px;
@@ -351,9 +372,11 @@ body {
 					color: #222222;
 					font-weight: 600;
 					border-bottom: solid 3px #162EA3;
-					padding: 15px 0 25px 85px;
+					padding: 15px 0 15px 85px;
 					position: relative;
 					margin-bottom: 20px;
+					display: flex;
+					align-items: center;
 					&::before {
 						display: block;
 						color: #162EA3;
@@ -375,13 +398,12 @@ body {
 						}
 						&::after {
 							content: "";
-							position: absolute;
+							position: relative;
 							width: 74px;
 							height: 69px;
 							background: url("/images/img_money1.jpg") 0 0 /100%;
-							right: 50px;
+							left: 10px;
 							top: 50%;
-							transform: translateY(-50%);
 						}
 					}
 				}
@@ -392,13 +414,12 @@ body {
 						}
 						&::after {
 							content: "";
-							position: absolute;
+							position: relative;
 							width: 61px;
 							height: 60px;
 							background: url("/images/img_money2.jpg") 0 0 /100%;
-							right: 30px;
+							left: 10px;
 							top: 50%;
-							transform: translateY(-50%);
 						}
 					}
 				}
@@ -409,13 +430,12 @@ body {
 						}
 						&::after {
 							content: "";
-							position: absolute;
+							position: relative;
 							width: 67px;
 							height: 60px;
 							background: url("/images/img_money3.jpg") 0 0 /100%;
-							right: 50px;
+							left: 10px;
 							top: 50%;
-							transform: translateY(-50%);
 						}
 					}
 				}
@@ -443,12 +463,14 @@ body {
 			font-size: 24px;
 			@media only screen and (max-width: 767px) {
 				font-size: 18px;
+				font-feature-settings: "palt";
 			}
 		}
 		.c-sec-ttl {
 			font-size: 28px;
 			@media only screen and (max-width: 767px) {
 				font-size: 22px;
+				font-feature-settings: "palt";
 			}
 		}
 		&-card {
@@ -518,6 +540,11 @@ body {
 					figure {
 						img {
 							width: 174px;
+							@media only screen and (max-width: 767px) {
+								width: 45%;
+								max-width: 160px;
+								margin-right: 20px;
+							}
 						}
 					}
 				}
@@ -525,6 +552,11 @@ body {
 					figure {
 						img {
 							width: 209px;
+							@media only screen and (max-width: 767px) {
+								width: 45%;
+								max-width: 160px;
+								margin-right: 20px;
+							}
 						}
 					}
 				}
@@ -532,6 +564,11 @@ body {
 					figure {
 						img {
 							width: 180px;
+							@media only screen and (max-width: 767px) {
+								width: 45%;
+								max-width: 160px;
+								margin-right: 20px;
+							}
 						}
 					}
 				}
@@ -539,6 +576,9 @@ body {
 			figure {
 				padding: 0 40px;
 				@media only screen and (max-width: 767px) {
+					display: flex;
+					align-items: center;
+					justify-content: center;
 					padding: 0;
 				}
 			}
@@ -546,6 +586,9 @@ body {
 				font-size: 24px;
 				font-weight: bold;
 				color: #141E50;
+				@media only screen and (max-width: 767px) {
+					font-size: 6vw;
+				}
 			}
 		}
 		&-bottom {
@@ -627,12 +670,19 @@ body {
 							border: solid 1px #CED0E5;
 							padding: 32px;
 							border-radius: 12px;
+							@media only screen and (max-width: 767px) {
+								border: none;
+								padding: 0;
+							}
 						}
 						.use-item-row-img {
 							width: 196px;
 						}
 						.use-item-content {
 							width: calc(100% - 264px);
+							@media only screen and (max-width: 767px) {
+								width: 100%;
+							}
 						}
 					}
 					&:nth-of-type(2) {
@@ -650,12 +700,19 @@ body {
 							border: solid 1px #CED0E5;
 							padding: 32px;
 							border-radius: 12px;
+							@media only screen and (max-width: 767px) {
+								border: none;
+								padding: 0;
+							}
 						}
 						.use-item-row-img {
 							width: 158px;
 						}
 						.use-item-content {
 							width: calc(100% - 222px);
+							@media only screen and (max-width: 767px) {
+								width: 100%;
+							}
 						}
 					}
 					&:nth-of-type(2) {
@@ -677,6 +734,9 @@ body {
 				align-items: center;
 			}
 			&:nth-of-type(1) {
+				@media only screen and (max-width: 767px) {
+					margin-bottom: 90px;
+				}
 				&::before {
 					content: "";
 					width: 200px;
@@ -686,6 +746,9 @@ body {
 					bottom: -60px;
 					position: absolute;
 					transform: translate(-50%, 0%);
+					@media only screen and (max-width: 767px) {
+						bottom: -120px;
+					}
 				}
 			}
 		}
@@ -818,6 +881,7 @@ body {
 		padding: 90px 0;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
+			margin-bottom: 60px;
 		}
 		.c-sec-ttl {
 			background: #F8F9FC;
@@ -898,6 +962,9 @@ body {
 			justify-content: space-between;
 			max-width: 1084px;
 			margin: 0 auto;
+			@media only screen and (max-width: 767px) {
+				flex-direction: column;
+			}
 			li {
 				width: 250px;
 				padding-top: 50px;
@@ -905,6 +972,7 @@ body {
 				justify-content: space-between;
 				position: relative;
 				@media only screen and (max-width: 767px) {
+					width: 100%;
 					padding: 20px 0;
 					flex-direction: column;
 				}
@@ -920,11 +988,15 @@ body {
 			padding: 30px;
 			position: relative;
 			@media only screen and (max-width: 767px) {
-				padding: 20px 0;
+				flex-direction: column;
+				padding: 20px;
 				margin: 0;
 			}
 			.step-content {
 				width: 484px;
+				@media only screen and (max-width: 767px) {
+					width: 100%;
+				}
 			}
 			.step-head {
 				h3 {
@@ -939,6 +1011,9 @@ body {
 			.step-img-content {
 				margin: 0;
 				width: calc(100% - 516px);
+				@media only screen and (max-width: 767px) {
+					width: 100%;
+				}
 			}
 		}
 	}
