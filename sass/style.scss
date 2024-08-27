@@ -14,9 +14,7 @@ body {
 		display: flex;
 		justify-content: space-between;
 		padding: 40px calc(50% - 540px) 20px;
-		background: url("/images/bg_mv_pc.jpg") 0 0 / 100% no-repeat;
 		@media only screen and (max-width: 767px) {
-			background: url("/images/bg_mv_sp.jpg") left 0 bottom 0 / 100% no-repeat;
 			padding: 40px 25px;
 		}
 		&-content {
