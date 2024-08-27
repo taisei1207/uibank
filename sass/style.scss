@@ -10,6 +10,7 @@ body {
 }
 
 .uibank {
+	background: #fff;
 	.mv {
 		display: flex;
 		justify-content: space-between;
@@ -91,7 +92,7 @@ body {
 
 	.about {
 		padding: 70px calc(50% - 540px) 90px;
-		background: #fff;
+		background: #F8F9FC;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
 		}
@@ -602,7 +603,6 @@ body {
 	}
 
 	.use {
-		background: #F8F9FC;
 		padding: 80px 97px;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
