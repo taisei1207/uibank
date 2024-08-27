@@ -816,25 +816,19 @@ body {
 
 	.step {
 		background: #F8F9FC;
-		padding: 90px calc(50% - 600px);
+		padding: 90px calc(50% - 542px);
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
 		}
 		&-pre {
-			display: flex;
-			justify-content: space-between;
-			margin-top: 90px;
-			padding-top: 40px;
-			border-top: solid 1px #CED0E5;
+			width: 100%;
 			position: relative;
-			@media only screen and (max-width: 767px) {
-				margin-top: 30px;
-				flex-direction: column;
-			}
 			.step-head-index {	
 				font-size: 12px;
 			}
 			.step-img-content {
+				margin-top: 30px;
+				width: 100%;
 				display: flex;
 				justify-content: space-between;
 			}
@@ -842,7 +836,7 @@ body {
 		&-head {
 			display: flex;
 			align-items: center;
-			margin-bottom: 30px;
+			margin-bottom: 12px;
 			&-index {	
 				font-size: 12px;
 				display: flex;
@@ -872,29 +866,24 @@ body {
 				font-size: 12px;
 			}
 			p {
-				font-size: 16px;
+				font-size: 32px;
+				line-height: 1;
 			}
 		}
 		&-content {
-			width: 580px;
-			@media only screen and (max-width: 767px) {
-				width: 100%;
-			}
 			&-desc {
 				display: block;
 				font-size: 18px;
 				margin-bottom: 5px;
+				font-weight: bold;
 			}
 		}
 		&-img-content {
-			width: calc(100% - 680px);
-			@media only screen and (max-width: 767px) {
-				width: 100%;
-				margin-top: 20px;
-			}
+			width: 100%;
+			margin-top: 24px;
 		}
 		figure {
-			width: 140px;
+			width: 113px;
 			text-align: center;
 			figcaption {
 				font-size: 20px;
@@ -902,51 +891,17 @@ body {
 			}
 		}
 		&-list {
+			display: flex;
+			justify-content: space-between;
 			li {
-				margin-top: 30px;
-				border-top: solid 1px #CED0E5;
+				width: 250px;
 				padding-top: 50px;
 				display: flex;
 				justify-content: space-between;
-				padding-right: 152px;
 				position: relative;
 				@media only screen and (max-width: 767px) {
 					padding: 20px 0;
 					flex-direction: column;
-				}
-				&::before {
-					content: "";
-					border-top: 22px solid #ced0e5;
-					border-right: 21px solid transparent;
-					border-left: 21px solid transparent;
-					width: 42px;
-					height: 22px;
-					position: absolute;
-					right: 380px;
-					top: 0;
-					box-sizing: border-box;
-					@media only screen and (max-width: 767px) {
-						left: 0;
-						right: 0;
-						margin: 0 auto;
-					}
-				}
-				&::after {
-					content: "";
-					border-top: 22px solid #f8f9fc;
-					border-right: 21px solid transparent;
-					border-left: 21px solid transparent;
-					width: 42px;
-					height: 22px;
-					position: absolute;
-					right: 380px;
-					top: -1px;
-					box-sizing: border-box;
-					@media only screen and (max-width: 767px) {
-						left: 0;
-						right: 0;
-						margin: 0 auto;
-					}
 				}
 			}
 		}
