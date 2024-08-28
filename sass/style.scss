@@ -324,6 +324,47 @@ body {
 			font-size: 12px;
 			margin-top: 10px;
 		}
+		&-box {
+			margin-top: 100px;
+			position: relative;
+			text-align: center;
+			&::before {
+				position: absolute;
+				top: -10px;
+				left: 50%;
+				width: 0;
+				height: 0;
+				-webkit-transform: translate(-50%, -50px);
+				transform: translate(-50%, -50px);
+				border-top: 29px solid #141E50;
+				border-right: 33px solid transparent;
+				border-bottom: 0;
+				border-left: 33px solid transparent;
+				border-style: solid;
+				content: "";
+			}
+			h4 {
+				color: #141E50;
+				font-size: 22px;
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+			ul {
+				display: flex;
+				max-width: 600px;
+				margin: 0 auto;
+				justify-content: space-between;
+			}
+			li {
+				box-sizing: border-box;
+				color: #141E50;
+				font-size: 22px;
+				padding: 20px;
+				border: solid #141E50 2px;
+				border-radius: 4px;
+				width: calc((100% - 20px) / 2);
+			}
+		}
 		&-row {
 			display: flex;
 			justify-content: space-between;
