@@ -213,7 +213,7 @@ body {
 	}
 
 	.feature {
-		padding: 70px calc(50% - 340px) 90px;
+		padding: 70px calc(50% - 350px) 90px;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 24px;
 		}
@@ -228,6 +228,13 @@ body {
 				margin-bottom: 90px;
 				@media only screen and (max-width: 767px) {
 					margin-bottom: 70px;
+				}
+			}
+			&:nth-of-type(1) {
+				.feature-img {
+					&:nth-of-type(3) {
+						max-width: 680px;
+					}
 				}
 			}
 			&:nth-of-type(2) {
