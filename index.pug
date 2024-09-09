@@ -232,13 +232,22 @@ html(lang="ja")
 							h3 アプリの<br>ダウンロード
 						span.step-content-desc 【本人確認書類】について
 						p 「スマホで本人確認」をお選びいただきますと、最短翌営業日で口座開設が可能です。ご本人さま確認書類として、運転免許証・個人番号カード・在留カード（外国籍の方）のいずれか1点をご用意ください。
-					.step-img-content 
+					.step-img-content.u-show-pc
 						figure 
 							figcaption iPhone
 							img(src="/images/img_qr_ip.jpg", alt="")
 						figure 
 							figcaption Android
 							img(src="/images/img_qr_an.jpg", alt="")
+					.step-img-content.u-show-sp 
+						.step-nav
+							.step-nav_item
+								a(href="" target="_blank" class="fixedNavi_btn")
+									img(src="/images/img_btn1.png", alt="")
+							.step-nav_item
+								a(href="" target="_blank" class="fixedNavi_btn")
+									img(src="/images/img_btn2.png", alt="")
+
 				ul.step-list 
 					li
 						.step-content
@@ -272,14 +281,6 @@ html(lang="ja")
 							.step-img-content 
 								img(src="/images/img_step_3.jpg", alt="")
 
-			.fixedNavi.js-fixedNavi
-				.fixedNavi_item
-					a(href="" target="_blank" class="fixedNavi_btn")
-						img(src="/images/img_btn1.png", alt="")
-				.fixedNavi_item
-					a(href="" target="_blank" class="fixedNavi_btn")
-						img(src="/images/img_btn2.png", alt="")
-
 			section.question 
 				.c-sec-ttl よくある不安や疑問にお答えします
 				ul.question-list 
@@ -308,5 +309,20 @@ html(lang="ja")
 							h3 預けているお金がなくなるリスクはあるの？
 							span.js-qanda-btn
 						p.js-qanda-txt 預金保険制度の対象銀行のため、1,000万円までの預金とその利息が保護されています。
+
+			.fixedNavi.js-fixedNavi.u-show-pc
+				.fixedNavi_item
+					a(href="" target="_blank" class="fixedNavi_btn")
+						img(src="/images/img_btn1.png", alt="")
+				.fixedNavi_item
+					a(href="" target="_blank" class="fixedNavi_btn")
+						img(src="/images/img_btn2.png", alt="")
+
+			.fixedNavi.js-fixedNavi.u-show-sp
+				span 無料
+				p ダウンロードは<br>こちら▶︎
+				.fixedNavi_item
+					a(href="" target="_blank" class="fixedNavi_btn")
+						img(src="/images/img_btn1.png", alt="")
 		script(src="/common/js/jquery-3.6.0.min.js")
 		script(src="/main.js") 
