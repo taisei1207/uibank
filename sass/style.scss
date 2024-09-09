@@ -913,6 +913,9 @@ body {
 			height: 143px;
 			margin: 0 auto;
 			display: block;
+			@media only screen and (max-width: 767px) {
+				width: 50%;
+			}
 		}
 		&-card {
 			background: #F8F9FC;
@@ -948,12 +951,28 @@ body {
 				font-size: 14px;
 			}
 		}
+		&-img-free {
+			@media only screen and (max-width: 767px) {
+				width: 50%;
+			}
+		}
+		&-img-pig {
+			@media only screen and (max-width: 767px) {
+				width: 50%;
+			}
+		}
+		&-img-phone {
+			@media only screen and (max-width: 767px) {
+				width: 50%;
+			}
+		}
 	}
 
 	.question {
 		padding: 80px calc(50% - 500px) 115px;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
+			margin-bottom: 60px;
 		}
 		&-list {
 			margin-top: 60px;
@@ -1050,7 +1069,6 @@ body {
 		background: #F8F9FC;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
-			margin-bottom: 60px;
 		}
 		.c-sec-ttl {
 			background: #F8F9FC;
@@ -1136,9 +1154,6 @@ body {
 				font-weight: bold;
 				margin-left: 10px;
 				color: #141E50;
-				@media only screen and (max-width: 767px) {
-					width: calc(100% - 80px);
-				}
 			}
 			span {
 				font-size: 12px;
@@ -1179,6 +1194,7 @@ body {
 			margin: 0 auto;
 			@media only screen and (max-width: 767px) {
 				flex-direction: column;
+				padding: 0 30px;
 			}
 			li {
 				width: calc((100% - 40px) / 3);
@@ -1194,16 +1210,25 @@ body {
 				&:nth-of-type(1) {
 					.step-img-content {
 						max-width: 138px;
+						@media only screen and (max-width: 767px) {
+							max-width: 50%;
+						}
 					}
 				}
 				&:nth-of-type(2) {
 					.step-img-content {
 						max-width: 150px;
+						@media only screen and (max-width: 767px) {
+							max-width: 50%;
+						}
 					}
 				}
 				&:nth-of-type(3) {
 					.step-img-content {
 						max-width: 138px;
+						@media only screen and (max-width: 767px) {
+							max-width: 50%;
+						}
 					}
 				}
 			}
