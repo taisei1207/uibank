@@ -29,7 +29,6 @@ body {
 		}
 		&-head {
 			font-size: 26px;
-			color: #141E50;
 			font-weight: bold;
 			@media only screen and (max-width: 767px) {
 				font-size: 4.7vw;
@@ -44,7 +43,6 @@ body {
 		}
 		&-txt {
 			font-size: 18px;
-			color: #141E50;
 			margin-bottom: 30px;
 			width: 95%;
 			@media only screen and (max-width: 767px) {
@@ -210,7 +208,6 @@ body {
 				margin-top: 5px;
 				min-width: 209px;
 				margin: 0 auto;
-				color: #666666;
 				text-align: left;
 			}
 		}
@@ -272,8 +269,7 @@ body {
 			h3 {
 				line-height: 1.8;
 				font-weight: 600;
-				font-size: 32px;
-				color: #141E50;
+				font-size: 24px;
 				margin-bottom: 15px;
 				@media only screen and (max-width: 767px) {
 					font-size: 20px;
@@ -318,7 +314,6 @@ body {
 			}
 			p {
 				margin-left: 15px;
-				color: #141E50;
 				font-size: 24px;
 				font-weight: 600;
 				@media only screen and (max-width: 767px) {
@@ -358,8 +353,7 @@ body {
 				content: "";
 			}
 			h4 {
-				color: #141E50;
-				font-size: 22px;
+				font-size: 24px;
 				font-weight: bold;
 				margin-bottom: 20px;
 			}
@@ -371,7 +365,6 @@ body {
 			}
 			li {
 				box-sizing: border-box;
-				color: #141E50;
 				font-size: 22px;
 				padding: 20px;
 				border: solid #141E50 2px;
@@ -385,8 +378,9 @@ body {
 		&-row {
 			display: flex;
 			justify-content: space-between;
-			font-size: 31px;
-			color: #141E50;
+			font-size: 24px;
+			text-align: center;
+			font-weight: bold;
 			width: 430px;
 			margin: 10px auto;
 			@media only screen and (max-width: 767px) {
@@ -427,9 +421,8 @@ body {
 				margin-bottom: 35px;
 				h3 {
 					font-size: 24px;
-					color: #222222;
 					font-weight: 600;
-					border-bottom: solid 3px #162EA3;
+					border-bottom: solid 3px #141E50;
 					padding: 15px 0 15px 75px;
 					position: relative;
 					margin-bottom: 20px;
@@ -437,7 +430,6 @@ body {
 					align-items: center;
 					&::before {
 						display: block;
-						color: #162EA3;
 						font-family: "din-2014", sans-serif;
 						font-weight: 700;
 						font-size: 81px;
@@ -516,14 +508,14 @@ body {
 			margin-bottom: 0;
 		}
 		.c-sec-head {
-			font-size: 24px;
+			font-size: 20px;
 			@media only screen and (max-width: 767px) {
 				font-size: 18px;
 				font-feature-settings: "palt";
 			}
 		}
 		.c-sec-ttl {
-			font-size: 28px;
+			font-size: 24px;
 			@media only screen and (max-width: 767px) {
 				font-size: 22px;
 				font-feature-settings: "palt";
@@ -640,8 +632,6 @@ body {
 			}
 			figcaption {
 				font-size: 20px;
-				font-weight: bold;
-				color: #141E50;
 				@media only screen and (max-width: 767px) {
 					font-size: 6vw;
 				}
@@ -652,7 +642,6 @@ body {
 			font-weight: bold;
 			text-align: center;
 			margin-top: 30px;
-			color: #141E50;
 		}
 	}
 
@@ -697,7 +686,6 @@ body {
 				width: 195px;
 				margin: 0 auto;
 				font-size: 14px;
-				color: #666;
 				margin-top: 15px;
 				text-align: left;
 				@media only screen and (max-width: 767px) {
@@ -881,18 +869,15 @@ body {
 				padding: 20px 0;
 			}
 			small {
-				color: #141E50;
 				font-size: 14px;
 				font-weight: bold;
 			}
 			h4 {
-				color: #141E50;
 				font-size: 20px;
 				margin-bottom: 4px;
 			}
 			span {
 				font-weight: bold;
-				color: #141E50;
 				font-size: 20px;
 				@media only screen and (max-width: 767px) {
 					font-size: 18px;
@@ -969,7 +954,7 @@ body {
 	}
 
 	.question {
-		padding: 80px calc(50% - 500px) 115px;
+		padding: 80px calc(50% - 320px) 115px;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
 			margin-bottom: 60px;
@@ -987,7 +972,7 @@ body {
 				background: #fff;
 				width: 100%;
 				margin-bottom: 20px;
-				padding: 50px 120px 50px 130px;
+				padding: 50px 50px 50px 130px;
 				position: relative;
 				border-radius: 10px;
 				@media only screen and (max-width: 767px) {
@@ -1020,8 +1005,7 @@ body {
 					}
 				}
 				h3 {
-					color: #141E50;
-					font-size: 24px;
+					font-size: 20px;
 					&.active {
 						margin-bottom: 10px;
 					}
@@ -1033,7 +1017,6 @@ body {
 					}
 				}
 				p {
-					color: #141E50;
 					font-size: 16px;
 					@media only screen and (max-width: 767px) {
 						font-size: 14px;
@@ -1082,6 +1065,7 @@ body {
 			margin: 0 auto;
 			padding: 30px;
 			position: relative;
+			border-radius: 12px;
 			@media only screen and (max-width: 767px) {
 				flex-direction: column;
 			}
@@ -1149,11 +1133,10 @@ body {
 				text-align: center;
 			}
 			h3 {
-				margin-left: 20px;
+				margin-top: 4px;
 				font-size: 24px;
 				font-weight: bold;
 				margin-left: 10px;
-				color: #141E50;
 			}
 			span {
 				font-size: 12px;
