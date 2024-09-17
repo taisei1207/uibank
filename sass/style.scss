@@ -646,7 +646,7 @@ body {
 	}
 
 	.manage {
-		padding: 70px calc(50% - 320px) 40px;
+		padding: 70px calc(50% - 320px) 120px;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
 		}
@@ -696,7 +696,7 @@ body {
 	}
 
 	.use {
-		padding: 80px 97px;
+		padding: 100px 80px 15px;
 		@media only screen and (max-width: 767px) {
 			padding: 40px 25px;
 		}
